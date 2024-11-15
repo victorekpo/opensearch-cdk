@@ -1,0 +1,8 @@
+.env*
+node_modules/
+dist/
+local.js
+.idea/
+package-lock.json
+cdk.out/
+.aws-sam/

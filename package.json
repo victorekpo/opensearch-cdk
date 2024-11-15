@@ -1,0 +1,48 @@
+{
+  "name": "opensearch-cdk",
+  "version": "1.0.0",
+  "bin": {
+    "index": "src/index.js"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "bootstrap": "cdk bootstrap",
+    "deploy": "cdk deploy --all --require-approval never",
+    "dev": "sh -c './develop.sh'",
+    "destroy": "cdk destroy --all",
+    "lint": "eslint **/*.ts",
+    "lint-fix": "eslint **/*.ts --fix",
+    "synth": "cdk synth",
+    "test": "jest",
+    "watch": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.10.4",
+    "@as-integrations/aws-lambda": "^3.1.0",
+    "@iarna/toml": "^2.2.5",
+    "aws-cdk-lib": "^2.147.2",
+    "aws-sdk": "^2.1651.0",
+    "constructs": "^10.3.0",
+    "graphql": "^16.9.0",
+    "mongoose": "^8.5.1",
+    "source-map-support": "^0.5.21",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "aws-cdk": "^2.147.2",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  }
+}
